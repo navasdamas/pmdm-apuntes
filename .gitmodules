@@ -1,0 +1,3 @@
+[submodule "pmdm-ejemplos"]
+	path = pmdm-ejemplos
+	url = git@github.com:navasdamas/pmdm-ejemplos.git

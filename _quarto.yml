@@ -1,0 +1,28 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Programación Multimedia y Dispositivos Móviles"
+  author: "Manuel Navas Damas"
+  chapters:
+    - index.qmd
+    - part: "Dart"
+      chapters:
+        - temas/dart/m01-t01-instalacion.qmd
+
+filters:
+  - include-code-files
+
+lang: es
+
+format:
+  html:
+    theme: cosmo
+    code-copy: true
+    toc: true
+  pdf:
+    documentclass: scrreprt
+
+
+

@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Programación Multimedia y Dispositivos Móviles",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "temas/dart/m01-t01-instalacion.html",
+    "href": "temas/dart/m01-t01-instalacion.html",
+    "title": "1  Instalación",
+    "section": "",
+    "text": "// t01-ej01-variables.dart\n// Ejecutar con: dart run t01-ej01-variables.dart\n\nvoid main() {\n  // 1. Tipo explícito\n  String nombre = 'Lucía';\n  int edad = 19;\n  double nota = 8.75;\n  bool aprobado = true;\n\n  // 2. Inferencia de tipo con var: el tipo se fija en la primera asignación\n  var ciudad = 'Baena'; // ciudad es String\n  ciudad = 'Córdoba'; // correcto: sigue siendo String\n  // ciudad = 14;       // ERROR: no se puede asignar un int a un String\n\n  // 3. final: se asigna una sola vez, en tiempo de ejecución\n  final fechaMatricula = DateTime.now();\n\n  // 4. const: constante conocida en tiempo de compilación\n  const notaMinima = 5.0;\n\n  // 5. Null safety: solo los tipos con ? admiten null\n  String? apodo; // vale null hasta que se le asigne algo\n  print('Apodo: ${apodo ?? \"sin apodo\"}');\n  apodo = 'Lu';\n  print('Apodo: $apodo');\n\n  // 6. Interpolación de cadenas\n  print('$nombre tiene $edad años y vive en $ciudad.');\n  print('Nota: $nota (mínimo para aprobar: $notaMinima)');\n  print('¿Aprobado? $aprobado');\n  print('El año que viene tendrá ${edad + 1} años.');\n  print('Matriculada el",
+    "crumbs": [
+      "Dart",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Instalación</span>"
+    ]
+  }
+]
